@@ -230,12 +230,12 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 <h2 id="schedule">Schedule</h2>
 
 if page.carpentry == "swc"
-include sc/schedule.html
+{% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/schedule.html %}
-endif
+{% endif %}
 
 {% comment %}
 Collaborative Notes
